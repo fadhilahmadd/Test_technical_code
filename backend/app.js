@@ -20,8 +20,7 @@ function segitiga(angka) {
     const angkaStr = angka.toString();
 
     for (let i = 1; i <= angkaStr.length; i++) {
-        let subStr = angkaStr.slice(i - 1, i);
-        subStr = subStr + '0'.repeat(i - 1)
+        const subStr = angkaStr.slice(i - 1, i);
         hasil += subStr + '\n'
     }
     
